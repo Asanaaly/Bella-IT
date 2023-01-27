@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__container {
+    max-width: 1350px;
+}
+
+.header {
+    padding: 35px 0;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    position: relative;
+    margin-left: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D253C;
+    transition: 1s;
+
+
+}
+
+.header__link:hover {
+    color: #007188;
+
+}
+
+.header__link:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #007188;
+    bottom: -2.5px;
+    transition: 1s;
+
+}
+
+
+.header__login {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D253C;
+}
+
+.header__get-price {
+    margin-left: 39px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #1D253C;
+    padding: 13px 31px;
+    border: 1px solid rgba(29, 37, 60, 0.2);
+    border-radius: 4px;
+}
+
+/* main */
+.hero__wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url(../img/hero\ 1.png);
+}
+
+.hero__descr {
+    width: 450px;
+    margin-top: 90px;
+    margin-left: 106px;
+}
+
+.hero__descr p:first-child {
+    color: #F46752;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 64px;
+    color: #1D253C;
+    font-weight: 600;
+}
+
+.hero__descr .descr {
+    font-size: 22px;
+    color: #5A6482;
+    font-weight: 500;
+    padding: 26px 0 40px;
+}
+
+.hero-btn {
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 4px;
+    background: #F46752;
+    text-transform: uppercase;
+    padding: 21px 39px 21px 29px;
+    border: 1px solid rgba(29, 37, 60, 0.2);
+}
+
+.hero-btn:hover {
+    transform: translateX(3px);
+}
+
+
+/* section */
+
+.section__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section__theme {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #F46752;
+}
+
+.section__title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+}
+
+.section__desc {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: #5A6482;
+}
+
+.section__btn-green {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #126F86;
+}
+
+
+
+
+
+
+
+
+/* secure */
+
+.secure__container {
+    max-width: 1143px;
+}
+
+.secure {
+    padding: 85px 0;
+    background: #F9F5F2;
+}
+
+.secure__wrapper {
+    grid-column-gap: 144px;
+}
+
+.secure__card {
+    padding: 83px 0;
+}
+
+.secure__title {
+    font-weight: 600;
+    margin: 26px 0 19px;
+}
+
+.secure__btn-green {
+    margin-top: 32px;
+}
+
+.secure__img {
+    width: 100%;
+}
+
+.secure__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.secure__subtitle {
+    margin-left: 43px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5A6482;
+    position: relative;
+}
+
+.secure__subtitle::before {
+    content: "*";
+    position: absolute;
+    color: #F46752;
+    left: -10px;
+}
+
+
+
+
+
+/* technology */
+
+.technology {
+    padding: 148px 0 164px;
+}
+
+.technology__wrapper {
+    grid-column-gap: 30px;
+}
+
+
+
+.technology__card {
+    padding: 126px 0;
+}
+
+.technology__title {
+    margin: 27px 0 35px;
+}
+
+.technology__btn-green {
+    margin-top: 15px;
+}
+
+.technology__img {
+    position: relative;
+    z-index: 1;
+}
+
+.technology__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.technology__dots {
+    z-index: -1;
+    top: -29px;
+    left: -39px;
+    position: absolute;
+    width: 195px;
+    height: 123.5px;
+}
+
+.technology__comment {
+    position: absolute;
+    bottom: -19px;
+    left: -60px;
+    width: 326px;
+    height: 67px;
+}
+
